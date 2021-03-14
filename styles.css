@@ -20,10 +20,15 @@
 }
 
 #welcome-section {
+  background-color: dimgray;
+  height: 100vw;
+}
+
+#welcome-section {
   display: flex;
   flex-direction: column;
   background-color: #3a3d40;
-  background: linear-gradient(59deg, #3a3d40 0%, #181719 100%);
+  background: linear-gradient(59deg, #3a3d40, #000);
   height: 100vh;
   width: 100%;
   justify-content: center;
@@ -36,6 +41,14 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+.sub-heading {
+  font-family: Lucida Console, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #009faa;
+  font-size: 30px;
+}
+
 h1 {
-  font-size: 50px;
+  font-size: 65px;
 }
