@@ -42,13 +42,13 @@
 }
 
 .sub-heading {
-  font-family: Lucida Console, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Century Gothic", Courier, monospace;
   font-style: italic;
-  text-transform: uppercase;
   color: #009faa;
   font-size: 30px;
 }
 
 h1 {
   font-size: 65px;
+  padding: 0% 0% 1.5% 0%;
 }
