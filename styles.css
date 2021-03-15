@@ -101,6 +101,22 @@ a {
   color: white;
 }
 
+#profile-link {
+  display: block;
+  text-align: center;
+  font-family: "Century Gothic", Courier, monospace;
+  font-weight: bold;
+  font-size: 150%;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding: 1% 2% 1% 2%;
+  border-radius: 2%;
+  background: #009faa;
+  color: white;
+}
+
 #contact {
   display: flex;
   flex-direction: column;
