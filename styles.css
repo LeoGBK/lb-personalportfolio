@@ -58,6 +58,14 @@ h1 {
   width: 100%;
 }
 
+h2 {
+  color: white;
+  font-size: 50px;
+  padding: 3% 0% 3% 0%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -66,4 +74,31 @@ h1 {
 .project-tile {
   text-align: center;
   padding: 3%;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  background-color: #009faa;
+  /* background: linear-gradient(59deg, #3a3d40, #000); */
+  height: 50vh;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+#contact p {
+  margin-left: auto;
+  margin-right: auto;
+  background: khaki;
+  font-family: "Century Gothic", Courier, monospace;
+  font-weight: bold;
+  font-size: 150%;
+  padding: 1% 2% 1% 2%;
+  border-radius: 2%;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
 }
