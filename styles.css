@@ -3,14 +3,40 @@
   padding: 0%;
 }
 
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 70%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 68%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 65%;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 #navbar {
   display: flex;
   position: fixed;
   justify-content: space-evenly;
   width: 100%;
-  background-color: #009faa;
-  color: white;
-  padding: 30px;
+  background-color: khaki;
+  padding: 1.875em;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-transform: uppercase;
@@ -20,6 +46,11 @@
 .nav-link {
   padding: 0% 1% 0% 1%;
   font-size: 120%;
+  color: #009faa;
+}
+
+#navbar a:hover {
+  background: #009faa;
   color: white;
 }
 
@@ -48,24 +79,23 @@
   font-family: "Century Gothic", Courier, monospace;
   font-style: italic;
   color: #009faa;
-  font-size: 30px;
+  font-size: 1.875em;
 }
 
 h1 {
   color: white;
-  font-size: 65px;
+  font-size: 4.063em;
   padding: 0% 0% 1.5% 0%;
 }
 
 #projects {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 5%;
+  padding: 3.125em;
+  /* padding-bottom: 5%; */
 }
 
 h2 {
   color: #009faa;
-  font-size: 50px;
+  font-size: 3.125em;
   padding: 3% 0% 3% 0%;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -73,12 +103,19 @@ h2 {
 
 .projects-grid {
   display: grid;
-  /* grid-template-columns: 50% 50%; */
-  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, minmax(20em, 1fr));
   grid-gap: 4rem;
   width: 100%;
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
+}
+
+@media (max-width: 40em) {
+  /* 30.625em */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 }
 
 .project-tile {
@@ -93,12 +130,27 @@ h2 {
   text-align: center;
 }
 
+.project-tile:hover {
+  margin-left: auto;
+  margin-right: auto;
+  background: #085c62;
+  font-family: "Century Gothic", Courier, monospace;
+  font-weight: bold;
+  font-size: 150%;
+  padding: 2% 2% 2% 2%;
+  border-radius: 2%;
+  text-align: center;
+  color: #009faa;
+}
+
 a {
   text-decoration: none;
 }
 
 .project-title {
   color: white;
+  padding-top: 0.313em;
+  padding-bottom: 0em;
 }
 
 #profile-link {
@@ -107,7 +159,7 @@ a {
   font-family: "Century Gothic", Courier, monospace;
   font-weight: bold;
   font-size: 150%;
-  margin-top: 45px;
+  margin-top: 2.813em;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
@@ -115,6 +167,10 @@ a {
   border-radius: 2%;
   background: #009faa;
   color: white;
+}
+
+#profile-link:hover {
+  background: #085c62;
 }
 
 #contact {
@@ -130,7 +186,7 @@ a {
 
 #contact h2 {
   color: white;
-  font-size: 50px;
+  font-size: 3.125em;
   padding: 3% 0% 3% 0%;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
