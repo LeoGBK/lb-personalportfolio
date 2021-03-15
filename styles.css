@@ -5,10 +5,12 @@
 
 #navbar {
   display: flex;
-  justify-content: flex-end;
+  position: fixed;
+  justify-content: space-evenly;
+  width: 100%;
   background-color: #009faa;
   color: white;
-  padding: 20px;
+  padding: 30px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-transform: uppercase;
@@ -17,6 +19,8 @@
 
 .nav-link {
   padding: 0% 1% 0% 1%;
+  font-size: 120%;
+  color: white;
 }
 
 #welcome-section {
@@ -55,6 +59,7 @@ h1 {
 
 #projects {
   width: 100%;
+  padding-top: 50px;
   padding-bottom: 5%;
 }
 
